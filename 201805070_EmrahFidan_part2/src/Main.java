@@ -34,6 +34,9 @@ public class Main {
 				double height = Double.valueOf(inputs[4]);
 				heightArray[i] = height;
 				
+				// I called BmiFunctions Class
+				double BMI = BmiFunctions.calculateBMI(weight, height);
+				interpretArray[i] = BmiFunctions.interpretBMI(BMI);
 				System.out.println();
 				}
 				// elements added to series
