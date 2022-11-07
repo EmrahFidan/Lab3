@@ -31,6 +31,7 @@ public class Bmi {
 	private double _weight;
 	private double _height;
 	
+
     public static final double KILOGRAMS_PER_POUND(double weight) {
 		
 		return (0.45359237) *weight;
@@ -43,6 +44,8 @@ public class Bmi {
 		
 	}
 	
+    // I created BmiFunctions  in the Bmi Class
+
 	public static double getBMI(double weight, double height) {
 		
 		double Weight = KILOGRAMS_PER_POUND(weight);
@@ -78,6 +81,34 @@ public class Bmi {
 			
 		return result;
 		
+	}
+
+    // getter
+	String get_name() {
+		return _name;
+	}
+	int get_age() {
+		return _age;
+	}
+	double get_weight() {
+		return _weight;
+	}
+	double get_height() {
+		return _height;
+	}
+	
+	//setter
+	void set_name(String name) {
+		_name = name;
+	}
+	void set_age(int age) {
+		_age = age;
+	}
+	void set_weight(double weight) {
+		_weight = weight;
+	}
+	void set_height(double height) {
+		_height = height;
 	}
 
 }
