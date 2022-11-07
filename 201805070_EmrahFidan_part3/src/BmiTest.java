@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class BmiTest {
 	
+	// for output
 	static String BMIarray[] = new String[3];
 	
 	public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class BmiTest {
 				BMIarray[i] = "** The BMI result for "+bmi.get_name()+" ("+" Age: "+bmi.get_age()+" Weight: "+bmi.get_weight()+" Height: "+bmi.get_height()+")"+" is"+"\n"+Bmi.getStatus(Bmi.getBMI(bmi.get_weight(), bmi.get_height()));
 				
 			}
-			else if(inputs.length == 4) {
+			else if(inputs.length == 4) { // without age constructor
 				Bmi bmi = new Bmi("",20,0,0);
 				
 				devide2(input,bmi);
@@ -33,7 +34,7 @@ public class BmiTest {
 				BMIarray[i] = "** The BMI result for "+bmi.get_name()+" ("+" Age: "+bmi.get_age()+" Weight: "+bmi.get_weight()+" Height: "+bmi.get_height()+")"+" is"+"\n"+Bmi.getStatus(Bmi.getBMI(bmi.get_weight(), bmi.get_height()));
 				
 			}
-			else {
+			else { // default
 				Bmi bmi = new Bmi("John Black", 25, 100, 50);
 								
 				System.out.println();
@@ -42,7 +43,7 @@ public class BmiTest {
 			}
 			
 	}
-		
+		// writing
 		for(int j=0; j<3; j++) {
 		System.out.println("---ENTER PERSON "+(j+1)+"'S VALUES---");
 		System.out.println(BMIarray[j]);
