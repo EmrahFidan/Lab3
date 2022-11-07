@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		
+		// I created arrays
 		String nameArray[] = new String[3]; 
 		int ageArray[] = new int[3];
 		double weightArray[] = new double[3]; 
@@ -11,7 +11,7 @@ public class Main {
 		String interpretArray[] = new String[3];
 		
 		Scanner scan = new Scanner(System.in);
-
+		
 		for( int i = 0; i < 3; i++) {
 				
 			System.out.println("Enter name, age, weight, height: (as space separated): ");
@@ -34,7 +34,14 @@ public class Main {
 			
 			System.out.println();
 			}
+			// elements added to series
 
+			// output part
+			for (int i=0;i < 3; i++) {
+				System.out.println("---ENTER PERSON "+(i+1)+"'S VALUES---");
+				System.out.println("** The BMI result for "+nameArray[i]+" ("+" Age: "+ageArray[i]+" Weight: "+weightArray[i]+" Height: "+heightArray[i]+")"+" is");
+				System.out.println(interpretArray[i]);
+			}
 
 	}
 
